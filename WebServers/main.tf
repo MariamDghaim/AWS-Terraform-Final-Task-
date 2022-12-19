@@ -48,7 +48,7 @@ resource "aws_instance" "web_server" {
   ami               = var.AmiName
   instance_type     = var.InstenceType
   security_groups   = [aws_security_group.Hello-terra-ssh-http.id]
-  key_name = "Fursa"
+  key_name = "mariam"
   user_data = <<-EOF
                   #!/bin/bash
                   sudo apt update -y
